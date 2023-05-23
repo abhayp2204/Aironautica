@@ -19,3 +19,11 @@
 .inactive {
     color: #ccc;
 }
+
+.navy {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
