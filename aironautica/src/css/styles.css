@@ -1,0 +1,21 @@
+.applogo {
+    width: 70px;
+}
+
+.navitem {
+    font-size: 18px;
+}
+
+.navitem:hover {
+    color: white;
+    /* font-weight: bold; */
+}
+
+.active {
+    color: white;
+    font-weight: bold;
+}
+
+.inactive {
+    color: #ccc;
+}
