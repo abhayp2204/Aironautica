@@ -45,11 +45,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
     return (
         <>
-            <motion.div variants={textVariant()}>
+            <motion.div variants={textVariant()} className='ml-[20%]'>
                 <p className={styles.sectionSubText}>My Projects</p>
                 <h2 className={`${styles.sectionHeadText} ml-6`}>Projects</h2>
             </motion.div>
-            <div className='w-full flex'>
+            <div className='ml-[21%]'>
                 <motion.p
                     variants={fadeIn("", "", 0.1, 1)}
                     className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -57,7 +57,7 @@ const Works = () => {
                     I'm a skilled software developer with experience in JavaScript, and expertise in frameworks like React, NodeJs and ThreeJs. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together and bring your ideas to life!
                 </motion.p>
             </div>
-            <div className='mt-20 flex flex-wrap gap-7'>
+            <div className='mt-20 ml-[20%] flex flex-wrap gap-7'>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={`project-${index}`}
