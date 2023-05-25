@@ -7,6 +7,11 @@ import {
     typescript,
     html,
     css,
+    coc,
+    coc2,
+    cocimg,
+    sync,
+    spyder,
     reactjs,
     redux,
     tailwind,
@@ -19,7 +24,8 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    twitchy,
+    facialkpr,
     jobit,
     tripguide,
     threejs,
@@ -198,66 +204,60 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        name: "Watch Party",
+        description:
+            "A web application that allows users to watch videos together in real-time. It also has a chat feature that allows users to chat with each other while watching the video.",
+        video: sync,
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+            name: "react",
+            color: "react",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+            name: "firebase",
+            color: 'firebase',
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+            name: "socket.io",
+            color: "socket"
+        },
+        {
+            name: "css",
+            color: "css",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: twitchy,
+      source_code_link: "https://github.com/abhayp2204/Twitch",
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        name: "Clash of Clans",
+        description:
+            "Clash of Clans is an Ascii Art based game that is played in the terminal. It is a strategy game where the player i.e, the Barbarian King has to destroy the enemy base while summoning barbarians, archers, and balloons to his aid.",
+        video: coc2,
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+            name: "python",
+            color: "python",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
+            name: "ascii",
+            color: "ascii",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: cocimg,
+      source_code_link: "https://github.com/abhayp2204/Facial-Keypoints-Recognition",
     },
     {
-      name: "Trip Guide",
+      name: "Spyder Animation",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A 3D animation of a spider-like creature. The animation was created using Blender and rendered using Eevee and Cycles.",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
+            name: "blender",
+            color: "blender",
         },
       ],
-      image: tripguide,
+      image: spyder,
       source_code_link: "https://github.com/",
     },
   ];

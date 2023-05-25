@@ -9,6 +9,12 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import coc from "./coc.mp4";
+import coc2 from "./coc2.mp4";
+import cocimg from "./coc.png";
+import spydervid from "./spydervid.mp4";
+import spyder from "./spyder2.png";
+import sync from "./sync.mp4";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -30,39 +36,49 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import twitchy from "./twitchy.png";
+import facialkpr from "./facialkpr.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
-  applogo,
-  applogo2,
-  applogo3,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+    logo,
+    applogo,
+    applogo2,
+    applogo3,
+    twitchy,
+    facialkpr,
+    backend,
+    creator,
+    mobile,
+    web,
+    github,
+    menu,
+    close,
+    css,
+    coc,
+    coc2,
+    cocimg,
+    sync,
+    spyder,
+    spydervid,
+    docker,
+    figma,
+    git,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    redux,
+    tailwind,
+    typescript,
+    threejs,
+    meta,
+    shopify,
+    starbucks,
+    tesla,
+    carrent,
+    jobit,
+    tripguide,
 };

@@ -27,3 +27,55 @@
     left: 0;
     width: 100%;
 }
+
+.tag-red {
+    color: red;
+}
+
+.tag-react {
+    color: #61dafb;
+}
+
+.tag-firebase {
+    color: #ff8c00;
+}
+
+.tag-css {
+    color: #1e90ff;
+}
+
+.tag-mongodb {
+    color: #228b22;
+}
+
+.tag-docker {
+    color: #00bfff;
+}
+
+.tag-tailwind {
+    color: #38b2ac;
+}
+
+.tag-socket {
+    color: #ff69b4;
+}
+
+.tag-jupyter {
+    color: #12cc2e;
+}
+
+.tag-tensorflow {
+    color: #0c809a;
+}
+
+.tag-python {
+    color: #2b6005;
+}
+
+.tag-ascii {
+    color: #aeb90b;
+}
+
+.tag-blender {
+    color: #d77702;
+}

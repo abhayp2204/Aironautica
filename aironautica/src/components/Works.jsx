@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, sync, coc, coc2, spydervid } from '../assets'
 import SectionWrapper from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../../utils/motions'
+import '../css/styles.css'
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, onHoverStart }) => {
     return (
-        <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+        <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} onHoverStart={onHoverStart} >
             <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" options={{ max: 45, scale: 1, speed: 450 }}>
                 <div className='relative w-full  h-[230px]'>
                     <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
@@ -31,7 +32,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
                 <div className='mt-4 flex flex-wrap gap-2'>
                     {tags.map((tag) => (
-                        <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                        <p key={tag.name} className={`tag text-[14px] tag-${tag.color}`}>
                             #{tag.name}
                         </p>
                     ))}
@@ -43,6 +44,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
 
 const Works = () => {
+    const [video, setVideo] = useState()
+
     return (
         <>
             <motion.div variants={textVariant()} className='ml-[20%]'>
@@ -63,8 +66,28 @@ const Works = () => {
                         key={`project-${index}`}
                         index={index}
                         {...project}
+                        onHoverStart={() => {
+                            setVideo(index)}
+                        }
                     />
                 ))}
+            </div>
+            <div className='mt-20 ml-[20%] w-[50%]'>
+                {video === 0 &&
+                    <video className='video' autoPlay muted>
+                        <source src={sync} type='video/mp4' alt='vid' />
+                    </video>
+                }
+                {video === 1 &&
+                    <video className='video' autoPlay muted>
+                        <source src={coc2} type='video/mp4' alt='vid' />
+                    </video>
+                }
+                {video === 2 &&
+                    <video className='video' autoPlay muted>
+                        <source src={spydervid} type='video/mp4' alt='vid' />
+                    </video>
+                }
             </div>
         </>
     )

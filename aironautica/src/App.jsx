@@ -19,9 +19,7 @@ const App = () => {
             <div className="flex justify-center items-center">
                 <Works />
             </div>
-            <div className="relative z-0">
-                <Contact />
-            </div>
+            <Contact />
         </BrowserRouter>
     )
 }
