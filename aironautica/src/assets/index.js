@@ -13,7 +13,7 @@ import coc from "./coc.mp4";
 import coc2 from "./coc2.mp4";
 import cocimg from "./coc.png";
 import spydervid from "./spydervid.mp4";
-import spyder from "./spyder2.png";
+import spyder from "./spyder.png";
 import sync from "./sync.mp4";
 
 import css from "./tech/css.png";
